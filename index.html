@@ -88,32 +88,38 @@
       
         <h1>GitHub&Hexo搭建个人博客</h1>
 ---
-学号：202000130012 姓名：李佳晨   
-实验题目：利用云平台搭建个人博客    
-实验目的：熟悉个人博客系统的搭建    
----
-<h2>Step1 注册GitHub账号</h2>
+学号：202000130012 姓名：李佳晨 
+
+<p>实验题目：利用云平台搭建个人博客    </p>
+<h2 id="实验目的：熟悉个人博客系统的搭建"><a href="#实验目的：熟悉个人博客系统的搭建" class="headerlink" title="实验目的：熟悉个人博客系统的搭建    "></a>实验目的：熟悉个人博客系统的搭建    </h2><h2>Step1 注册GitHub账号</h2>
 网页搜索GitHub进入官网并注册账号。
 <h2>Step2 安装Git</h2>
 到git官网上下载    
-[Git](https://gitforwindows.org/)    
-下载后会有一个Git bash的命令行工具。安装好后，可以用 git --version在cmd中查看版本。
+
+<p><a target="_blank" rel="noopener" href="https://gitforwindows.org/">Git</a>  </p>
+<p>下载后会有一个Git bash的命令行工具。安装好后，可以用 <code>git --version</code> 在cmd中查看版本。</p>
 <h2>Step3 安装NodeJS</h2>
 Hexo是基于Node JS编写的，Node JS的版本需要不低于10.13，建议使用12.0及以上的版本。Windows选择LTS版本即可。   
-[Node JS](https://nodejs.org/en/download)   
-安装完成后，在cmd中输入 node -v 和 npm -v检查是否安装成功。  
+
+<p><a target="_blank" rel="noopener" href="https://nodejs.org/en/download">Node JS</a>   </p>
+<p>安装完成后，在cmd中输入 <code>node -v</code> 和 <code>npm -v</code> 检查是否安装成功。  </p>
+<h2>Step4 安装Hexo</h2>
+ 首选创建一个文件夹blog，然后在文件夹下直接右键git bash打开。  
+ 输入命令  
  
+<p> <code>npm install -g hexo-cli</code><br> 完成后使用 hexo -v查看以下版本。没问题后Hexo就安装完成了。<br> 接下来使用命令<code>hexo init myblog</code>初始一下Hexo,myblog可以用其他名字代替。然后<code>cd myblog</code>进入文件夹，接着输入命令 <code>npm install</code>。最后输入 <code>hexo g</code>和<code>hexo server</code>打开hexo的服务。浏览器中输入localhost:4000就可以看到生成的博客了。</p>
+<h2>Step5 Github创建个人仓库</h2>
+这一步需要在Github中完成，以用户名创建一个仓库，后缀是.github.io
+<h2>Step6 生成SSH添加到GitHub</h2>
+在git bash中输入命令：
 
-
-
-
-
-
+<p><code>git config --global user.name &quot;yourname&quot;</code></p>
+<p><code>git config --global user.email &quot;youremail&quot;</code></p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2023/03/21/MynewPost/" data-id="clfi7dsay0000iwr891hjgdhk" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2023/03/21/MynewPost/" data-id="clfi7uf1q0000ksr81hpze8r5" class="article-share-link">Share</a>
       
       
     </footer>
@@ -162,7 +168,7 @@ Hexo是基于Node JS编写的，Node JS的版本需要不低于10.13，建议使
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2023/03/14/hello-world/" data-id="clfi7dsb80001iwr8dvnj99x7" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2023/03/14/hello-world/" data-id="clfi7uf1u0001ksr83ec921va" class="article-share-link">Share</a>
       
       
     </footer>
